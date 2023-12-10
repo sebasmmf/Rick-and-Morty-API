@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty API</title>
+    <link rel="stylesheet" href="css/tailwind.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-900">
+    <header class="w-auto bg-gray-900 flex items-center justify-center">
+        <form class="searcher flex flex-col items-center justify-center ">
+            <input type="text" placeholder="Write a name" class="search" id="search">
+            
+            <select class="status" id="status">
+                <option disabled selected value="">-- Status --</option>
+                <option value="alive">Alive</option>
+                <option value="dead">Dead</option>
+                <option value="unknown">Unknown</option>
+            </select>
+
+            <button type="submit" class="flex justify-center items-center">Search
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"></path></svg>
+            </button>
+        </form>
+    </header>
+    <main>
+        <section class="bg-gray-900 p-8 grid gap-10 xl:grid-cols-4 lg:grid-cols-3  md:grid-cols-2 sm:grid-cols-1" id="results">
+        </section>
+    </main>
+    <footer class="h-12 w-auto bg-gray-900 flex items-center justify-center" id="footer">
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

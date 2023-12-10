@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+:root {
+    --teal-color: #0c5b59;
+
+    --main-tipography: 'Nova Square', sans-serif;
+}
+
+* {
+    color: white;
+    font-family: var(--main-tipography);
+}
+
+
+header {
+    height: 180px;
+    width: 190px;
+}
+
+.searcher input, select {
+    margin: 5px 0 5px 0;
+}
+
+.search {
+    color: black;
+    padding: 5px;
+    border: 3px solid var(--teal-color);
+    border-radius: 6px;
+    text-align: center;
+}
+
+.searcher .status {
+    width: 190px;
+    text-align: center;
+    border-radius: 6px;
+    border: 3px solid var(--teal-color);
+    color: var(--teal-color);
+}
+
+.searcher .status option {
+    color: var(--teal-color);
+}
+
+
+.searcher button[type="submit"] {
+    height: 30px;
+    width: 190px;
+    background-color: var(--teal-color);
+    margin-top: 5px;
+    border-radius: 6px;
+}
+
+.searcher button[type="submit"]:hover {
+    background-color: #093f3d;
+    transition: background-color .5s;
+}
+
+.searcher button[type="submit"] svg {
+    color: white;
+    width: 24px;
+    height: 24px;
+
+}
+
+.alert {
+    margin: 15px;
+    color: #81d6e9;
+}
+
+.card {
+    width: 100%;
+    min-width: 190px;
+    max-width: 230px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+    border: 5px solid var(--teal-color);
+    border-radius: 6px;
+
+}
+
+.card img {
+    height: auto;
+    width: 100%;
+    margin: 0;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.status-circle {
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.status p {
+    text-transform: capitalize;
+}
+
+.btn-paginator {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: var(--teal-color);
+    margin: 0px 10px 0 10px;
+}
+
+.btn-paginator:hover {
+    background-color: #093f3d;
+    transition: background-color .5s;
+
+}
